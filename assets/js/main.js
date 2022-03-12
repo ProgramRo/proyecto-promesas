@@ -7,8 +7,8 @@ const getDatos = async () => {
         console.log(datos)
 
         // Se crea la constante que contendrá los métodos del array a trabajar (primero el filtro de la información, y luego un mapeo de títulos)
-        const veamos = datos.filter(t => t.id <= 20).map(t => t.title)
-        console.log()
+        const titulos = datos.filter(t => t.id <= 20).map(t => t.title)
+        console.log(titulos)
     } catch (err) {
         console.log(err)
     }
